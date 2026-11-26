@@ -10,6 +10,7 @@ from .llm import generate_structured, log_event, wrap_untrusted
 from .portfolio import portfolio_as_text
 from .schemas import JobRequirements, MatchResult, Skill
 
+#TODO: 프롬프트 최적화 필요
 SYSTEM = """너는 요구 기술 하나에 대해 포트폴리오에서 근거를 찾는 매처다.
 규칙:
 - <portfolio> 안에 실제로 적힌 내용만 근거로 쓴다. 없는 경험을 만들어 내지 않는다.

@@ -8,6 +8,7 @@ import re
 from .llm import generate_structured, log_event, wrap_untrusted
 from .schemas import JobRequirements
 
+#TODO: 프롬프트 최적화 필요
 SYSTEM = """너는 채용공고에서 요구사항을 추출하는 분석기다.
 규칙:
 - 공고에 적힌 내용만 추출한다. 공고에 없는 기술을 추가하거나 추측하지 않는다.
